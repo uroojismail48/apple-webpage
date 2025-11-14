@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; 
+    }
+    html,body { height: 100%; 
+    }
+
+    
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: url(background.jfif);
+      background-position: center;
+      background-repeat: repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    /* MAIN CONTAINER */
+    .container {
+      box-shadow: 0 0 30px rgb(0, 0, 0), inset 0 0 20px white;
+      position: relative;
+      width: 360px;
+      max-width: 92%;
+      padding: 32px;
+      border-radius: 14px;
+      background: rgba(107, 106, 106, 0.192);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.877);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+    }
+.container:hover{
+ 
+  box-shadow: 0 0 20px white, 0 0 20px white;
+}
+ /* CONTAINER ENDS HERE */
+/* 
+ HEADING  */
+    h1 {
+      font-size: 38px;
+      color: #d3d0d0;
+      letter-spacing: 10px;
+    } 
+ h1:hover{
+  color: black ;
+}
+
+/* HEADING END HERE */
+
+/* INPUTS */
+    [type="text"],
+    [type="password"] {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: none;
+      background: rgba(245, 245, 245, 0.247);
+      font-size: 14px;
+    }
+[type="text"]:hover ,
+    [type="password"]:hover{
+      color: black;
+
+      box-shadow: inset 0 0 10px rgb(56, 54, 54), 0 0 20px rgb(241, 239, 239);
+    }
+    /* INPUTS ENDS HERE */
+    /* REMEBER ROW FORGOT  */
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #eee;
+      font-size: 14px;
+    }
+
+    a.forgot {
+      color: #9c8f8f;
+      font-size: 13px;
+      text-decoration: none;
+    }
+ 
+    /* END HERE */
+    /* SUBMIT BUTTON */
+    button.submit {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(68, 67, 67, 0.95);
+      color: rgb(250, 244, 244);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button.submit:hover {
+       box-shadow: 0 0 20px white, 0 0 20px white;
+      background-color: aliceblue;
+      color:rgb(199, 190, 190);
+    }
+/* ENDS HERE */
+
+/* DONT hAVE AN ACC */
+    .donthave {
+      color: #eee7e7;
+      font-size: 17px;
+      text-decoration: none;
+    }
+    .donthave:hover {
+      color: rgb(51, 48, 48);
+    }
+    /* ENDS HERE */
+
+    /* FOOTER */
+    .footer{
+    display: table-footer-group;
+    }
+    footer {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.582), inset 0 0 20px white;
+      border: 1px solid rgb(245, 239, 239);
+    background-color: rgba(168, 162, 162, 0.075);
+    color: white;
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .footer a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  /* ENDS HERE */
+  /* BACKGROUND ICON LOGO */
+  .bkimage{
+    position:absolute;
+  }
+  /* HEADER LOGO */
+header {
+  position: fixed; 
+  top: 10px;       
+  left: 10px;    
+  z-index: 1000;  
+}
+
+.bklogo {
+  height: 80px; 
+  width: auto;  
+}
+/* END HERE */
+  </style>
+</head>
+<body>
+  <!-- HEADER LOGO DIV -->
+  <header>
+    <img class="bklogo" src="bklogo.png" alt="">
+  </header>
+    <img class="bkimage" src="lohoos.png">
+     <!-- CONTAINER FORM DIV -->
+  <div class="container" role="form">
+<!-- LOGIN HEADING -->
+    <h1 id="login-heading">Log in</h1>
+<!-- INPUTS USERNAME PASSWORDS -->
+    <div class="field">
+      <label for="user" class="visually-hidden">Username</label>
+      <input id="user" type="text" placeholder="Username" autocomplete="username">
+    </div>
+    <div class="field">
+      <label for="pass" class="visually-hidden">Password</label>
+      <input id="pass" type="password" placeholder="Password" autocomplete="current-password">
+    </div>
+ <!-- DIV ROW OF REMEBER checkbox FORGOT -->
+    <div class="row">
+      <label class="remember">
+        <input type="checkbox" id="remember">
+        Remember Me
+      </label>
+      <a class="forgot" href="#forgot">Forgot password?</a>
+    </div>
+<!-- SUBMIT BTN DIV -->
+    <button class="submit" type="button">Log In</button>
+<!-- DONT HAVE AN AACC -->
+    <a class="donthave" href="sign-in.html">Don't have an account?</a>
+
+  </div>
+ <!-- FOOTER -->
+  <footer class="footer">
+  <p><a href="#terms">Terms & Conditions</a></p>
+  <p><a href="#privacy">Privacy Note</a></p>
+  <p><a href="#help">Help</a></p>
+  </foot>
+  <!-- ENDS HERE -->
+</body>
+</html>

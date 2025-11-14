@@ -1,0 +1,406 @@
+
+        body {
+            background: linear-gradient(100deg, rgb(219, 221, 220), rgb(157, 161, 160), rgb(107, 95, 104));
+
+        }
+    
+        /* PRODUCT CONTAINER */
+        .product-container {
+            margin: 90px;
+            padding-right: 100px;
+
+            display: flex;
+        }
+
+        /* SIDEBAR LEFT*/
+        .sidebar2 {
+    position: absolute;      
+    top: 270px;
+    left: 20px;          
+    width: 180px;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1px);
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 100;
+}
+
+    
+       
+        .price-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.price-tag {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    color: #eaeaea;
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: 0.3s, transform 0.2s;
+}
+
+.price-tag:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: translateX(5px);
+}
+ ul li {
+            list-style: none;
+            padding: 0px;
+            font-size: 18px;
+            word-spacing: 6px;
+            color: white;
+
+        }
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-link {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, 0.897);
+    color: #000000;
+    transform: translateX(5px);
+}
+
+        /* RIGHT SIDEBAR */
+        .sidebar {
+    position: absolute;        
+    top: 270px;
+    right: 90px;               
+    z-index: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 0 30px 15px 3px rgba(0, 0, 0, 0.582);
+    width: 100px;
+    height: 200px;              
+    color: rgba(255, 255, 255, 0.623);
+    padding: 1rem;
+}
+
+.sidebar ul {
+            list-style: none;
+            padding: 0px;
+            font-size: 18px;
+            word-spacing: 6px;
+            color: white;
+
+        }
+        /* SIDEBARS END */
+        /* PRODUCT AND ITEMS */
+        .product {
+            flex-wrap: wrap;
+            margin-top: 100px;
+            display: flex;
+            margin-left: 220px;
+        }
+        .search-bar::placeholder {
+  color: #fff;
+}
+.items {
+    width: 180px;               
+    height: auto;
+    padding: 22px;
+    margin: 15px;
+    left: 200px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.items:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgb(255, 255, 255);
+}
+ .items:hover {
+            background: #d3ced2;
+            color: #000;
+            box-shadow: 0 0 10px #f9fafa, 0 0 20px #f8f6f6, 0 0 40px #ffffff;
+        }
+        .iphone1 {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* ITEMS END HERE */
+        /* APPLE PHONES IMG*/
+      
+
+        /* IPHONE SIDE LOGO PIC  */
+        .iphone {
+            position: absolute;
+            width: 180px;
+            height: 90px;
+        }
+
+        /* LOG IN BUTTON STARTS */
+        .login-button {
+            cursor: pointer;
+            box-shadow: 0 20px 15px 3px rgba(0, 0, 0, 0.288);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background-color: rgb(78, 76, 76);
+            color: #fafafa;
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            right: 70px;
+            top: 100px;
+            border-radius: 70px;
+
+        }
+
+        .login-button:hover {
+            background: #d3ced2;
+            color: #000;
+            box-shadow: 0 0 10px #b1b2b3, 0 0 20px #ffffff, 0 0 40px #fcfcfc;
+        }
+
+        /* LOG IN BUTTON ENDS */
+
+        /* SIGN UP BUTTON STARTS */
+        .SIGNUP-button {
+            box-shadow: 0 20px 15px 3px rgba(0, 0, 0, 0.288);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background-color: rgb(78, 76, 76);
+            color: #fafafa;
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            right: 200px;
+            top: 100px;
+            border-radius: 70px;
+            cursor: pointer;
+        }
+
+        .SIGNUP-button:hover {
+            background: #d3ced2;
+            color: #000;
+            box-shadow: 0 0 10px #b1b2b3, 0 0 20px #ffffff, 0 0 40px #fcfcfc;
+        }
+
+        /* SIGN UP BUTTON ENDS */
+
+
+        /* CENTER NAVBAR STARTS  */
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 50;
+            padding: 1rem 1.5rem;
+            margin: 0 auto;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-content {
+            backdrop-filter: blur(12px);
+            background: rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1rem 2rem;
+            box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            font-size: 0.975rem;
+            font-weight: 500;
+            color: rgba(240, 232, 232, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 0.5rem;
+            display: block;
+        }
+
+        .nav-link:hover {
+            color: #fafafa;
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: rgba(250, 250, 250, 0.6);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(250, 250, 250, 0.05);
+            border-radius: 0.5rem;
+            transform: scale(0);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        /* CENTER NAV BAR ENDS */
+
+
+        /* 
+            SEARCHBAR */
+        .search-bar {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: fixed;
+            margin-left: 140px;
+            backdrop-filter: blur(12px);
+            width: 300px;
+            height: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            color: rgba(240, 232, 232, 0.7);
+            background: rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .sidebar2 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar2 li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #555353;
+    border-left: 3px solid transparent;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+        
+.sidebar2 li:hover {
+    color: #999696;
+    border-left: 3px solid #007aff;
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+        /* 
+            PARAGRAPH */
+            .para {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.para a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.para a:hover {
+    color: #094679; 
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+        .img-search {
+            width: 40px;
+            height: 40px;
+            margin-left: 30px;
+
+        }
+  .p1{
+    color: #555353;
+     font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600px;
+  }
+ .contact{
+   
+    border: 4px solid rgb(216, 210, 210); 
+    box-shadow: 0 0 20px rgb(21, 21, 22), 0 0 20px rgb(85, 83, 84), 0 0 20px rgb(21, 21, 22);
+      background-color: rgb(155, 157, 158);
+    color:rgb(216, 211, 211);
+
+     font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600px;
+    
+    height:90px;
+    width:90px;
+    border-radius: 100px;
+ }
+.contact:hover {
+    border: 2px solid black;
+  box-shadow: 0 0 20px rgb(179, 179, 180), 0 0 20px rgb(209, 205, 207), inset 0 0 10px white;
+      background-color: rgb(12, 12, 12);
+      color:rgb(160, 155, 155);
+}
